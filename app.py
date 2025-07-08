@@ -583,7 +583,7 @@ elif page == "Introduction":
     - 🔮 Forecasting with Prophet
     - 👥 Customer Clustering using K-Means
 
-    **🛠 Built using:** Python, Pandas, Plotly, Prophet, Scikit-learn, and Streamlit.        
+         
     ---
     ### 🎯 Purpose
     - Provide a comprehensive view of sales & profitability
