@@ -136,7 +136,7 @@ if st.sidebar.button("📄 View Report"):
 # --- LOAD DATA ---
 @st.cache_data
 def load_data():
-    df = pd.read_csv("data/Superstore.csv", encoding='ISO-8859-1', parse_dates=['Order Date'])
+    df = pd.read_csv("Superstore.csv", encoding='ISO-8859-1', parse_dates=['Order Date'])
     return df
 
 df = load_data()
@@ -400,7 +400,7 @@ elif page == "Forecasting":
     st.markdown("### Prophet-based forecast for future sales")
 
     # Load forecast data
-    forecast_data = pd.read_csv("data/forecast_sales.csv")
+    forecast_data = pd.read_csv("forecast_sales.csv")
 
     # Plot forecast with confidence interval
     fig = go.Figure()
@@ -453,7 +453,7 @@ elif page == "Clustering":
     st.markdown("### K-Means clustering based on sales metrics")
 
     # Load clustering data
-    cluster_df = pd.read_csv("data/clustered_data.csv", encoding='ISO-8859-1')
+    cluster_df = pd.read_csv("clustered_data.csv", encoding='ISO-8859-1')
 
     # Scatter plot: Sales vs Profit (colored by Cluster)
     fig = px.scatter(
