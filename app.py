@@ -106,7 +106,7 @@ st.markdown("""
 
 with st.sidebar:
 
-    logo = Image.open("images\logo.png")
+    logo = Image.open("logo.png")
     st.image(logo, width=120, caption="", output_format="PNG")
 
     st.markdown("""
